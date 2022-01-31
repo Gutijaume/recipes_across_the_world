@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+
+<h3 class="titulo">COMIDAS DEL MUNDO</h3>
+<div class="main_container" *ngFor="let dish of dishList">
+  <div class="card_element">
+    <div class="card_element_head">
+      <h1 class="food_title">{{ dish.name }}</h1>
+      <div class="div_image_flag">
+        <img class="img_flag" src="{{ dish.flag }}" />
+      </div>
+    </div>
+
+    <div class="card_element_body">
+      <div class="div_image">
+        <img class="img" src="{{ dish.img }}" />
+        <div class="div_description">
+          <p class="p_description">{{ dish.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="div_btn">
+      <button (click)="onBtnClick()">Ingredientes</button>
+    </div>
+
+    <div *ngIf="viewIngredients">
+      <ul class="ingredients_list">
+        <li class="ingredients_item" *ngFor="let value of dish.ingredients">
+          {{ value }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<app-create-form (sendDish)="handleDish ($event)"></app-create-form>

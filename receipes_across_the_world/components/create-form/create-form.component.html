@@ -1,0 +1,13 @@
+<header>AÑADE UN PLATO</header>
+
+<form id="form"  class="topBefore" >
+
+		  <input id="name" type="text" placeholder="NOMBRE" #name (keyup)='saveName (name.value)'>
+		  <input id="flag" type="text" placeholder="PAÍS" #flag (keyup)='saveFlag(flag.value)'>
+      <input id="image" type="text" placeholder="IMAGEN" #img (keyup)='saveImg(img.value)'>
+      <!-- <input id="ingredients" type="text" placeholder="INGREDIENTES" #ingredients (keyup)='saveIngredients(ingredients.value)'> -->
+		  <textarea id="description" type="text" placeholder="DESCRIPCION"#description (keyup)='saveDescription(description.value)'></textarea>
+      <button id="submit" (click) = "addNewDish()">GO!</button>
+  <!-- <input id="submit" type="submit" value="GO!"> -->
+
+</form>

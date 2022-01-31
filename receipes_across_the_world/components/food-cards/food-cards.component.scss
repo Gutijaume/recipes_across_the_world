@@ -1,0 +1,154 @@
+
+
+.titulo{
+  justify-content: center;
+  text-align: center;
+  color: #9b2226;
+  text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2, 6px 6px #6ac7c2;
+  font-size: 55px;
+}
+
+
+.main_container{
+  margin: 0 auto;
+  color:rgb(255, 255, 255);
+  width: 70%;
+  padding: 20px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+  border-radius: 20px;
+}
+
+.card_element{
+  background-color: #ca6702;
+
+  margin: 50px;
+  padding: 20px;
+  border-radius: 00px 00px 20px 20px;
+
+}
+
+.card_element_head{
+  display: flex;
+  align-items: flex-end;
+
+
+
+}
+
+.card_element_body{
+  text-align: center;
+}
+
+.food_title{
+  color: #001219;
+  text-align: left;
+  font-family: Arial;
+  font-size: 60px;
+  text-shadow: 0px 0px 9px #508AD3;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  }
+
+.div_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img{
+  width: 500px;
+  height: 300px;
+  border: solid;
+  border-color: #001219;
+  border-radius: 20px;
+  border-width: 5px;
+
+
+}
+
+.img:hover {filter: grayscale(80%)};
+
+.img_flag{
+  width: 50px;
+  height: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.div_image_flag{
+  padding-left: 50px;
+  margin-top: 40,2px;
+  margin-bottom: 40,2px;
+
+
+}
+
+.div_description{
+  border-radius: 20px 10px 50px 30px;
+-webkit-border-radius: 20px 10px 50px 30px;
+-moz-border-radius: 20px 10px 50px 30px;
+border: 10px double;
+border-color: black;
+margin-top: 50px;
+background-color: #e9d8a6;
+}
+
+.p_description{
+  color: #001219;
+  padding: 10px
+}
+
+.div_btn{
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+
+  background-color: #0a9396;
+  border: solid;
+  border-color: #001219;
+  color: #001219;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.ingredients_list{
+  padding-left: 2rem;
+  list-style-type: none;
+  background-color: #e9d8a6;
+  border: solid;
+  border-color: #001219;
+  border-radius: 20px;
+  border-width: 5px;
+
+}
+
+.ingredients_item{
+  padding-left: 2rem;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/483/483841.png);
+  background-position: 0 0;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
+  padding-bottom: 15px;
+  color: #001219;
+  font-size: 25px;
+  margin-top: 15px;
+
+
+
+}
+
