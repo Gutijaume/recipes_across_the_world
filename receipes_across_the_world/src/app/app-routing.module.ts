@@ -1,26 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CocktailsListComponent } from './components/cocktails-list/cocktails-list.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { CreateFormComponent } from './components/create-form/create-form.component';
+import { FoodCardsComponent } from './components/food-cards/food-cards.component';
+import { FoodListComponent } from './components/food-list/food-list.component';
 
 
 const routes: Routes = [
-  {
-    path: 'home', loadChildren: () =>
-      import('./pages/home/home.module').then(m => m.HomeModule)
-  },
-  {
-    path: 'about', loadChildren: () =>
-      import('./pages/about/about.module').then(m => m.AboutModule)
-  },
-  {
-    path: `contact`, loadChildren: () =>
-      import('./pages/contact/contact.module').then(m => m.ContactModule)
-  },
-  { path: '', redirectTo: 'home', pathMatch: 'full' }
+
+  { path: '', redirectTo: 'main', pathMatch: 'full' },
+  { path: 'contact', component: ContactFormComponent},
+  { path: 'main', component: FoodCardsComponent},
+  { path: 'home', component: FoodCardsComponent},
+  { path: 'create', component: CreateFormComponent },
+  { path: 'about', loadChildren: () =>import('./pages/about/about.module').then(m => m.AboutModule)},
+  { path: 'chicken-meals', component: FoodListComponent },
+  { path: 'cocktails', component: CocktailsListComponent },
+
+
 ];
-
-
-
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

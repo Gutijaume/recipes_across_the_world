@@ -32,7 +32,7 @@ export class ContactFormComponent implements OnInit {
   }
 
   public onSubmit(): void {
-    // console.log(this.userContactForm)
+
     this.submitted = true
     if (this.userContactForm.valid){
       const validContactForm : UserContact = {

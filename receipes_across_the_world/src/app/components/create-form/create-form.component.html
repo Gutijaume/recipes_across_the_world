@@ -1,0 +1,25 @@
+<header>AÑADE UN PLATO</header>
+
+<form id="form" (ngSubmit)="addNewDish()" novalidate [formGroup]="createForm" class="topBefore" >
+
+		  <input id="name" type="text" placeholder="NOMBRE" formControlName = "name">
+		  <input id="flag" type="text" placeholder="PAÍS" formControlName = "flag">
+      <input id="image" type="text" placeholder="IMAGEN" formControlName = "img">
+      <input id="ingredients" type="text" placeholder="INGREDIENTES" formControlName = "ingredients">
+		  <textarea id="description" type="text" placeholder="DESCRIPCION" formControlName = "description"></textarea>
+
+  <input id="submit" type="submit" value="GO!">
+
+</form>
+
+<!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+
+    <strong class="me-auto">Plato añadido</strong>
+
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Felicidades, has añadido un nuevo plato
+  </div>
+</div> -->

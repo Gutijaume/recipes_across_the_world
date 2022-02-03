@@ -7,7 +7,7 @@ import { dishModel } from 'models/food-divs';
   styleUrls: ['./food-cards.component.scss']
 })
 
-export class FoodContainerComponent implements OnInit {
+export class FoodCardsComponent implements OnInit {
   public viewIngredients: boolean = false;
 
   public dish: dishModel = {
