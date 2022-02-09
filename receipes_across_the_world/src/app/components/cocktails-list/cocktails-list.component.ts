@@ -10,7 +10,7 @@ import { CocktailsListService } from './cocktails-list.service';
 export class CocktailsListComponent implements OnInit {
 
   public cocktailsList: Cocktail []
-  public chosed: boolean = false
+  favoritCocktail: Cocktail
 
 
   constructor(private cocktailsListService : CocktailsListService) { }
@@ -25,5 +25,9 @@ export class CocktailsListComponent implements OnInit {
       this.cocktailsList = res.drinks
     })
   }
+  escogido (cocktail:Cocktail): void {
+   this.favoritCocktail = cocktail
+   alert("Esta es tu elección: " + cocktail.strDrink)
+    }
 
 }
